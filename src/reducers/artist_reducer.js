@@ -1,6 +1,6 @@
 export default function(state={},action) {
 
-    switch(action.type){
+    switch(action.type){ //manda
         default:
             return state;
     }
