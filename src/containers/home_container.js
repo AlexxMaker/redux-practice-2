@@ -11,7 +11,7 @@ import Artistlist from '../components/artistlist';
 class HomeContainer extends Component { 
 
     componentWillMount() {
-
+        this.props.artistListAll();
     }
 
 
@@ -26,6 +26,7 @@ class HomeContainer extends Component {
         return (
             <div>
                 <Search keywords={this.getKeywords}/>
+                <Artistlist artists={this.props.artists.artistList}/>
             </div>
         )
     }
